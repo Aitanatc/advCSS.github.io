@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Lora:wght@600&display=swap');
+
+/* @media screen and (max-width: 500px) { */
+    body{
+        background-color: black;
+    }
+    body div {        
+        font-family: Arial, Helvetica, sans-serif;
+        table-layout: fixed;
+        background-color: white;
+        max-width: 80%;
+
+    }
+    div{
+        text-align: center;         
+    }
+    p:after, ul:after {
+        content: " ";
+        display: block;
+        border-bottom: 0.5px solid #d0d0d0;
+        width: 100%;
+        
+    }
+    ul:before{
+        content: " ";
+        display: block;
+        border-bottom: 0.5px solid #d0d0d0;
+    }
+   
+    a { 
+        text-decoration: none;
+        color: #c1b9b9;  
+    } 
+    a:active{
+        color: #DEB887
+    }
+    a:hover{
+        color: #00ddff
+    }
+       
+    ul {
+        list-style-type: none;
+        font-family: "Lora";
+       text-transform: uppercase;
+       text-align: center;
+    }
+    
+    .post-date {
+        text-align: right;
+        font-family: "Lora";
+       text-transform: uppercase;
+       color: black;
+    }
+    h2{
+        font-family: "Lora";
+        text-align: left;
+        font-size:large ;
+        margin-left: 5%;
+
+    }
+    p{
+        color: #333;
+        text-align: justify;
+        margin: 1em;
+    }
+
+    h1{
+        list-style-type: none;
+        font-family: "Lora";
+       text-align: center;
+       font-size:xxx-large;                 
+    }
+    h1 a {
+        color: black;
+    }
+    ul{
+        padding: 1em;
+        line-height: 2em;
+    }
+  img{
+    width: 70%;
+  }
+
+  @media screen and (max-width: 600px) {
+  p:after, .post-date:after, p:after {
+    content: " ";
+    display: block;
+    border-bottom: 0.5px solid #d0d0d0;
+    width: 100%;
+    }
+    body div{
+    max-width: 300px;
+    }
+    .post-date{
+        margin: 5%;
+    }
+
+  }
+
+@media screen and (min-width: 600px) {
+
+    body {        
+        max-width: 100%;
+    }
+    ul li {
+        display: inline;
+        padding-left: 4%;
+    }
+    ul{
+        text-align: right;
+    }
+    main{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    article{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    .post-content{
+        border-left: 2px solid #d0d0d0;
+        height: auto;
+    }
+    img, h2{
+        max-width: fit-content;
+    }
+    .post-date{
+        font-size: large;  
+          
+}
